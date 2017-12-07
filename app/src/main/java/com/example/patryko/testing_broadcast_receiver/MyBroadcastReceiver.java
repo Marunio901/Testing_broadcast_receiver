@@ -10,7 +10,7 @@ import android.widget.Toast;
  */
 
 public class MyBroadcastReceiver extends BroadcastReceiver {
-    private int id = 0;
+   // private int id = 0;
 
 
     public void onReceive(Context context, Intent intent){
@@ -18,8 +18,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         String message = intent.getStringExtra("Message");
         Toast.makeText(context, message, Toast.LENGTH_LONG).show();
 
-        NotifyService ns = new NotifyService();
-        ns.CustomNotification(message);
+//        NotifyService ns = new NotifyService();
+//        ns.CustomNotification(message);
 
 
     }
